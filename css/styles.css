@@ -1,6 +1,477 @@
-html, body {
-    margin: 0;
-    padding-right: 0;
-    color: blue;
 
+body {
+	margin: auto;
+	padding: 0;
+}
+h2 {
+	font-weight: bold;
+}
+p {
+	font-size: 125%;
+}
+.logo {
+	display: flex;
+	align-items: right;
+	float: left;
+	width: 0%	;
+}
+.navigation {
+	display: flex;
+	float: right;
+	font-size: 1.1rem;
+	gap: 3rem;
+	justify-content: flex-end;
+	width: 100%;
+}
+.navigation-link {
+	font-weight: 800;
+	line-height: 5rem;
+	padding: 2rem;
+}
+
+a {
+	color: #0065fc;
+	text-decoration: none;
+}
+
+.top-title-and-subtitle {
+	margin: 10px;
+}
+.mapmarker {
+	background-color: #f2f2f2;
+	border-radius: 0.7rem 0 0 0.7rem;
+	font-size: 1rem;
+	padding: 1rem;
+	text-align: center;
+	width: 3.5rem;
+}
+.search-row {
+	align-items: left;
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+	width: auto;
+}
+.search-box {
+	border: solid 0.0625rem #f2f2f2;
+	border-right-color: white;
+	border-left-color: white;
+	font-weight: 900;
+	font-size: 1rem;
+	width: 15rem;
+}
+.search-button {
+	align-content: center;
+	background-color: #0065fc;
+	border-left-color: white;
+	border-radius: 0rem 1rem 1rem 0;
+	color: #eeeeee;
+	cursor: pointer;
+	display: flex;
+	font-weight: 800;
+	font-size: 1rem;
+	padding: 1rem;
+	width: 6rem;
+}
+.search-icon {
+	color: #0065fc;
+}
+.filter-border {
+	align-items: left;
+	border-radius: 3rem;
+	border: solid 0.1875rem#f2f2f2;
+	color: black;
+	display: inline-flex;
+	font-size: 1.25rem;
+	padding: 0 1.5625rem;
+}
+.filter-border:hover {
+	background-color: #81aa77;
+	border: solid 0.0625rem #e74123;
+	box-shadow: 0 0.5rem 1rem 0 rgba(224, 224, 8, 0.5);
+}
+.filter-icon {
+	align-items: center;
+	background-color: #deebff;
+	border-radius: 60%;
+	color: #6c82bd;
+	display: flex;
+	float: left;
+	height: 3.125rem;
+	justify-content: center;
+	margin: 0 0.625rem 0 -1.5625rem;
+	min-width: 3.125rem;
+	position: relative;
+}
+.filter-row {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 1.5rem;
+	height: 50px;
+	margin: 10px;
+	width: auto;
+}
+.filter-text {
+	font-weight: 900;
+}
+
+.information {
+	font-weight: lighter;
+	margin: auto;
+	padding: 1rem;
+}
+.info-icon {
+	background-color: white;
+	border: 0.125rem solid #f2f2f2;
+	border-radius: 3.125rem;
+	color: #0065fc;
+	padding: 0.1875rem 0.625rem;
+}
+.accommodations-card {
+	background-color: white;
+	border: solid white 0.3125rem;
+	border-radius: 1.25rem;
+	box-shadow: 0 0.25rem 0.5rem 0 rgba(68, 26, 122, 0.2);
+	transition: 0.3s;
+	width: 18rem;
+}
+.accommodations-card:hover {
+	box-shadow: 0 0.5rem 2rem 0 rgb(80, 46, 119);
+}
+.accommodations-card img {
+	border-radius: 1.25rem 1.25rem 0 0;
+	height: 8.125rem;
+	object-fit: cover;
+	position: relative;
+}
+.accommodations-card-text {
+	border-radius: 0 0 1.25rem 1.25rem;
+	line-height: 0.2rem;
+	padding: 0.5rem;
+}
+.accommodations-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: space-evenly;
+}
+.accommodations-header {
+	display: flex;
+	justify-content: flex-start;
+}
+.accommodations-header-text {
+	margin-left: 3rem;
+}
+.accommodations-background {
+	background-color: #f2f2f2;
+	border-radius: 1.5rem;
+	height: 39rem;
+	padding: 1rem;
+	width: 65rem;
+}
+.hotels {
+	display: flex;
+	gap: 4rem;
+	justify-content: center;
+}
+.showmore,
+.showmore a {
+	margin-left: 2rem;
+	color: black;
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+
+/* Most Popular*/
+
+.chartline {
+	align-self: center;
+	display: flex;
+	margin-left: auto;
+	margin-right: 3.125rem;
+}
+
+.most-popular-card {
+	background-color: white;
+	border: solid white 0.3125rem;
+	border-radius: 1.5rem;
+	box-shadow: 0 0.25rem 0.5rem 0 rgba(56, 92, 99, 0.2);
+	height: 9.5rem;
+	transition: 0.3s;
+	width: 28rem;
+}
+.most-popular-card:hover {
+	box-shadow: 0 0.5rem 1rem 0 rgb(72, 117, 50);
+}
+.most-popular-card img {
+	border-radius: 1.25rem 0 0 1.25rem;
+	height: 9rem;
+	object-fit: cover;
+	position: relative;
+}
+.most-popular-card-text {
+	float: right;
+	height: 9rem;
+	object-fit: cover;
+	padding-left: 0.625rem;
+	position: relative;
+	width: 16rem;
+}
+
+.most-popular-container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	height: 32rem;
+	justify-items: center;
+}
+.most-popular-header {
+	display: flex;
+	justify-content: flex-start;
+}
+.most-popular-header-text {
+	margin-left: 3rem;
+}
+.most-popular-background {
+	background-color: #f2f2f2;
+	border-radius: 1.5rem;
+	height: 39rem;
+	padding: 1rem;
+	width: 38rem;
+}
+
+/* Activities in Marseille*/
+.column-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	height: 39rem;
+}
+.column-4 {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.activities-container {
+	display: flex;
+	height: auto;
+	gap: 3rem;
+	justify-content: center;
+}
+.activities-container a {
+	color: black;
+}
+.activities-container h3 {
+	line-height: 2rem;
+	margin: 0.5rem 1rem;
+}
+.activities-header {
+	display: flex;
+	justify-content: flex-start;
+}
+.activities-header-text {
+	margin-left: 10rem;
+}
+.activities-background {
+	border-radius: 1.5rem;
+	height: auto;
+	margin: 0 6rem;
+	width: 90%;
+}
+/* Activities in Marseille Cards*/
+.activitycard {
+	background-color: rgb(236, 231, 231);
+	border-radius: 1.25rem;
+	box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+	height: 35rem;
+	transition: 0.3s;
+	width: 23rem;
+}
+.activitycard img {
+	border-radius: 1.5rem 1.5rem 0 0;
+	height: 90%;
+	width: 100%;
+}
+.activitycard:hover {
+	box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 1);
+}
+
+.old-port-card img {
+	height: 90%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+.pomegues-card {
+	height: 18rem;
+}
+
+.pomegues-card img {
+	height: 80%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+.frioul-card {
+	height: 14rem;
+}
+
+.frioul-card img {
+	height: 80%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+.calanques-card img {
+	height: 90%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+.notre-dame-card {
+	height: 16rem;
+}
+
+.notre-dame-card img {
+	height: 80%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+.longchamp-card {
+	height: 16rem;
+}
+
+.longchamp-card img {
+	height: 80%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+}
+
+/* Star and Link Colors*/
+.bluestar {
+	color: #0065fc;
+}
+
+.greystar {
+	color: #f2f2f2;
+}
+
+.card-link {
+	color: black;
+}
+
+/* Footer */
+
+.footer {
+	background-color: #f2f2f2;
+}
+.row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer a {
+	color: black;
+}
+.footer a:hover {
+	font-weight: 800;
+	text-decoration-line: underline;
+}
+/* Media Queries*/
+@media all and (max-width: 1600px) and (min-width: 1500px) {
+	.accommodations-background {
+		height: auto;
+		padding: 0 0.5em 3em 0.5em;
+		width: 50%;
+	}
+
+	.accommodations-card {
+		width: 27em;
+	}
+	/* Activities Cards */
+
+	.activities-background {
+		height: auto;
+		margin: 0 auto;
+		width: 95%;
+	}
+	.activities-container {
+		gap: 2em;
+		height: auto;
+		justify-content: center;
+		width: 100%;
+	}
+	.activitycard,
+	.old-port-card,
+	.pomegues-card,
+	.frioul-card,
+	.calanques-card,
+	.notre-dame-card,
+	.longchamp-card {
+		width: 21em;
+	}
+
+	.activitycard img {
+		height: 90%;
+	}
+	.frioul-card img,
+	.pomegues-card img,
+	.longchamp-card img,
+	.notre-dame-card img {
+		height: 80%;
+	}
+
+	body {
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+	}
+	.column-2,
+	.column-4 {
+		gap: 3em;
+		height: auto;
+	}
+	.hotels {
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	.most-popular-background {
+		height: auto;
+		padding: 0 1em 3em 1em;
+		width: 95%;
+	}
+	.most-popular-card {
+		width: 25em;
+	}
+	.most-popular-card-text {
+		object-fit: cover;
+		position: relative;
+		width: 14em;
+	}
+	.most-popular-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: auto;
+		justify-content: space-evenly;
+	}
+	.most-popular-header {
+		display: inline-flex;
+		height: 4em;
+		width: 100%;
+	}
+	.navigation,
+	.logo {
+		flex-wrap: nowrap;
+		gap: 1.5em;
+	}
 }
