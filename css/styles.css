@@ -261,7 +261,7 @@ h2 {
 }
 .most-popular-header {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 .most-popular-header-text {
 	margin-left: 3rem;
@@ -448,3 +448,12 @@ h2 {
 	text-decoration-line: underline;
 	color: black;
 }
+
+@media all and (min-width: 960px) and (max-width: 1200px)
+
+/*tablets*/
+
+@media only screen and (min-width: 680px) and (max-width: 800px) 
+
+/*cell phones*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) 
